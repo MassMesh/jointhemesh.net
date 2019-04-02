@@ -1,0 +1,14 @@
+{
+  "MassMesh": {
+   "url": "https://massmesh.org/",
+   "zip": "02203"
+ },
+  "NYCMesh": {
+    "url": "https://www.nycmesh.net/",
+    "zip": "10001"
+  },
+  "PhillyMesh": {
+    "url": "https://phillymesh.net/",
+    "zip": "19140"
+  }
+}

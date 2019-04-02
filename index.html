@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>Join The Mesh Net</title>
+
+  <!-- Bootstrap v4.3.1 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- AngularJS v1.7.8 -->
+  <script src="js/angular.min.js" integrity="sha384-TBbVc3SDLcWU5RloNEsoiDVvRK9iYkBNMm1OsAcOIVEASb7zzMWB0aMobj6CzKUw" crossorigin="anonymous"></script>
+  <!-- UI Router v1.0.22 -->
+  <script src="js/angular-ui-router.min.js" integrity="sha384-WZvbqtDwcbW0+rNDwkSAhQKU1GRO67t6BedM7wyn+tjjha+DsnwcdgWPIEAHI0YO" crossorigin="anonymous"></script>
+
+  <script src="app/app.js"></script>
+  <script src="app/factories.js"></script>
+  <script src="app/controllers.js"></script>
+
+  <script src="js/particles.min.js"></script>
+  <style>
+    .cover-container {
+      z-index: 1;
+    }
+
+    .particles-js-canvas-el {
+      position: fixed;
+      z-index: 0;
+    }
+  </style>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="particles-js" class="text-center" data-ng-app="app">
+  <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Join The Mesh.Net</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" ui-sref-active="active" ui-sref="search">Search</a>
+          <a class="nav-link" ui-sref-active="active" ui-sref="list">Full List</a>
+          <a class="nav-link" ui-sref-active="active" href="https://github.com/MassMesh/jointhemesh.net">Add Your Mesh</a>
+          <a class="nav-link" ui-sref-active="active" ui-sref="about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main" class="inner cover" data-ui-view=""></main>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Created for all meshes by <a href="https://massmesh.org/">MassMesh</a>.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    particlesJS.load('particles-js', 'data/particles.json');
+  </script>
+</body>
+</html>

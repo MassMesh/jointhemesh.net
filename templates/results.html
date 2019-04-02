@@ -1,0 +1,10 @@
+<h1 class="cover-heading">Here's what we found:</h1>
+
+<div class="card result" ng-repeat="mesh in results">
+  <div class="card-body">
+    <h5 class="card-title">{{mesh.name}}</h5>
+    <p class="card-text"></p>
+    <p class="card-text" ng-if="mesh.distance"><small class="text-muted">{{mesh.distance | number:1}} miles away</small></p>
+    <a href="{{mesh.url}}" class="card-link">{{mesh.url}}</a>
+  </div>
+</div>
