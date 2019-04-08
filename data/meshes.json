@@ -1,11 +1,15 @@
 {
   "MassMesh": {
-   "url": "https://massmesh.org/",
-   "zip": "02203"
- },
+    "url": "https://massmesh.org/",
+    "zip": "02203"
+  },
   "NYCMesh": {
     "url": "https://www.nycmesh.net/",
     "zip": "10001"
+  },
+  "People's Open Network": {
+    "url": "https://peoplesopen.net/",
+    "zip": "94601"
   },
   "PhillyMesh": {
     "url": "https://phillymesh.net/",
