@@ -1,22 +1,37 @@
 {
   "MassMesh": {
     "url": "https://massmesh.org/",
-    "zip": "02203"
+    "coords": {
+      "lat": "42.360588",
+      "lon": "-71.058737"
+    }
   },
   "NYCMesh": {
     "url": "https://www.nycmesh.net/",
-    "zip": "10001"
+    "coords": {
+      "lat": "40.750636",
+      "lon": "-73.997177"
+    }
   },
   "People's Open Network": {
     "url": "https://peoplesopen.net/",
-    "zip": "94601"
+    "coords": {
+      "lat": "37.775545",
+      "lon": "-122.218705"
+    }
   },
   "PhillyMesh": {
     "url": "https://phillymesh.net/",
-    "zip": "19140"
+    "coords": {
+      "lat": "40.012177",
+      "lon": "-75.145495"
+    }
   },
   "Red Hook Wifi": {
     "url": "https://redhookwifi.org/",
-    "zip": "11231"
+    "coords": {
+      "lat": "40.677916",
+      "lon": "-74.005154"
+    }
   }
 }

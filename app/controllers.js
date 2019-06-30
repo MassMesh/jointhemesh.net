@@ -1,11 +1,30 @@
 angular.module('app')
 
-.controller('IndexController', ['$scope', '$state', function IndexController($scope, $state) {
-  $scope.submit = function() {
-    $state.transitionTo('results', {zip: $scope.zip});
-  };
-}])
+  .controller('IndexController', ['$scope', '$state', 'zipcodes', 'geolocationService', function IndexController($scope, $state, zipcodes, geolocationService) {
+    $scope.loading = false;
 
-.controller('SearchController', ['$scope', 'results', function SearchController($scope, results) {
-  $scope.results = results;
-}]);
+    $scope.submit = function() {
+      let coords = zipcodes[$scope.zip];
+      $state.transitionTo('results', {
+        lat: coords.lat,
+        lon: coords.lon
+      });
+    };
+
+    $scope.geolocate = function() {
+      $scope.loading = true;
+      geolocationService.getCurrentPosition().then((position) => {
+          $state.transitionTo('results', {
+            lat: position.coords.latitude,
+            lon: position.coords.longitude
+          });
+        })
+        .finally(() => {
+          $scope.loading = false;
+        });
+    }
+  }])
+
+  .controller('ResultsController', ['$scope', 'results', function ResultsController($scope, results) {
+    $scope.results = results;
+  }]);

@@ -1,7 +1,17 @@
 <h1 class="cover-heading">Find a mesh near you</h1>
 
-<p class="lead">
+<div class="lead">
   <form ng-submit="submit()">
-    <input class="form-control form-control-lg" type="text" placeholder="Enter ZIP Code" name="zip" ng-model="zip">
+    <div class="row align-items-center">
+      <div class="col-md">
+        <input class="form-control form-control-lg" type="text" placeholder="Enter US ZIP Code" name="zip" ng-model="zip">
+      </div>
+      <div class="divider col-md-auto">
+        - OR -
+      </div>
+      <div class="col-md">
+        <button class="btn btn-lg btn-info" type="button" ng-click="geolocate()"><i ng-hide="loading" class="fas fa-fw fa-map-marker-alt"></i><i ng-show="loading" class="fas fa-fw fa-circle-notch fa-spin"></i> Geolocate</button>
+      </div>
+    </div>
   </form>
-</p>
+</div>
