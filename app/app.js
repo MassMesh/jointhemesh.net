@@ -23,24 +23,53 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "templates/results.html",
       controller: "ResultsController",
       resolve: {
-        meshes: ['$http', function($http) {
+        zipcodes: ['$http', function($http) {
+          return $http.get('data/zipcodes.json')
+            .then(function(data) {
+              return data.data;
+            });
+        }],
+        meshes: ['zipcodes', '$http', function(zipcodes, $http) {
           return $http.get('data/meshes.json')
             .then(function(data) {
               return Object.keys(data.data).map((meshName) => {
                 let mesh = data.data[meshName];
+                let locations = mesh.locations.map((location) => {
+                  let lat = location.lat;
+                  let lon = location.lon;
+                  if (!lat || !lon && location.zip) {
+                    lat = zipcodes[location.zip].lat;
+                    lon = zipcodes[location.zip].lon;
+                  }
+                  return Object.assign(location, {
+                    "lat": lat,
+                    "lon": lon
+                  });
+                });
                 return Object.assign(mesh, {
-                  "name": meshName
+                  "name": meshName,
+                  "locations": locations
                 });
               });
             });
         }],
         results: ['meshes', 'distanceService', '$stateParams', function(meshes, distanceService, $stateParams) {
           return meshes.map((mesh) => {
+            let locations = mesh.locations.map((location) => {
+              let distance = distanceService.calcDistance(location.lat, location.lon, $stateParams.lat, $stateParams.lon);
+              return Object.assign(location, {
+                "distance": distance
+              });
+            }).sort(function(a, b) {
+              return a.distance - b.distance;
+            });
+            let nearest = locations.length ? locations[0] : {};
             return Object.assign(mesh, {
-              distance: distanceService.calcDistance(mesh.coords.lat, mesh.coords.lon, $stateParams.lat, $stateParams.lon)
+              "locations": locations,
+              "nearest": nearest
             });
           }).sort(function(a, b) {
-            return a.distance - b.distance;
+            return a.nearest.distance - b.nearest.distance;
           });
         }]
       },

@@ -30,4 +30,8 @@ angular.module('app')
 
   .controller('ResultsController', ['$scope', 'results', function ResultsController($scope, results) {
     $scope.results = results;
+
+    $scope.isNumeric = function(n) {
+      return !isNaN(parseFloat(n)) && isFinite(n);
+    }
   }]);

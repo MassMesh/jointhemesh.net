@@ -1,37 +1,46 @@
 {
   "MassMesh": {
     "url": "https://massmesh.org/",
-    "coords": {
-      "lat": "42.360588",
-      "lon": "-71.058737"
-    }
+    "locations": [{
+      "name": "Somerville, MA",
+      "zip": "02143"
+    }, {
+      "name": "Allston, MA",
+      "zip": "02134"
+    }]
   },
   "NYCMesh": {
     "url": "https://www.nycmesh.net/",
-    "coords": {
-      "lat": "40.750636",
-      "lon": "-73.997177"
-    }
+    "locations": [{
+      "name": "Manhattan, New York, NY",
+      "zip": "10013"
+    }, {
+      "name": "Manhattan, New York, NY",
+      "zip": "10024"
+    }, {
+      "name": "Brooklyn, New York, NY",
+      "zip": "11216"
+    }]
   },
   "People's Open Network": {
     "url": "https://peoplesopen.net/",
-    "coords": {
-      "lat": "37.775545",
-      "lon": "-122.218705"
-    }
+    "locations": [{
+      "name": "Oakland, CA",
+      "zip": "94607"
+    }]
   },
   "PhillyMesh": {
     "url": "https://phillymesh.net/",
-    "coords": {
-      "lat": "40.012177",
-      "lon": "-75.145495"
-    }
+    "locations": [{
+      "name": "Philadelphia, PA",
+      "zip": "19102"
+    }]
   },
   "Red Hook Wifi": {
     "url": "https://redhookwifi.org/",
-    "coords": {
-      "lat": "40.677916",
-      "lon": "-74.005154"
-    }
+    "locations": [{
+      "name": "Red Hook, Brooklyn, NY",
+      "zip": "11231"
+    }]
   }
 }

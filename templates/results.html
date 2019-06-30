@@ -4,7 +4,7 @@
   <div class="card-body">
     <h5 class="card-title">{{mesh.name}}</h5>
     <p class="card-text"></p>
-    <p class="card-text" ng-if="mesh.distance"><small class="text-muted">{{mesh.distance | number:1}} miles away</small></p>
+    <p class="card-text" ng-if="isNumeric(mesh.nearest.distance)"><small class="text-muted">{{mesh.nearest.distance | number:1}} miles away ({{mesh.nearest.name}})</small></p>
     <a href="{{mesh.url}}" class="card-link">{{mesh.url}}</a>
   </div>
 </div>
