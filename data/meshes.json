@@ -1,4 +1,28 @@
 {
+  "Freifunk": {
+    "url": "https://freifunk.net/",
+    "locations": [{
+      "name": "Münster, Germany",
+      "lat": "51.960660",
+      "lon": "7.626135"
+    }, {
+      "name": "Aachen, Germany",
+      "lat": "50.775344",
+      "lon": "6.083883"
+    }, {
+      "name": "Munich, Germany",
+      "lat": "48.135119",
+      "lon": "11.581989"
+    }, {
+      "name": "Stuttgart, Germany",
+      "lat": "48.775848",
+      "lon": "9.182929"
+    }, {
+      "name": "Paderborn, Germany",
+      "lat": "51.718914",
+      "lon": "8.757521"
+    }]
+  },
   "MassMesh": {
     "url": "https://massmesh.org/",
     "locations": [{
