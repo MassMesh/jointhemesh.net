@@ -19,6 +19,9 @@ angular.module('app')
             lon: position.coords.longitude
           });
         })
+        .catch((err) => {
+          console.log(err);
+        })
         .finally(() => {
           $scope.loading = false;
         });
