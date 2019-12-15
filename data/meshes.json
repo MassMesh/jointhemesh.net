@@ -2,81 +2,98 @@
   "Freifunk": {
     "url": "https://freifunk.net/",
     "locations": [{
-      "name": "Münster, Germany",
-      "lat": "51.960660",
-      "lon": "7.626135"
-    }, {
-      "name": "Aachen, Germany",
-      "lat": "50.775344",
-      "lon": "6.083883"
-    }, {
-      "name": "Munich, Germany",
-      "lat": "48.135119",
-      "lon": "11.581989"
-    }, {
-      "name": "Stuttgart, Germany",
-      "lat": "48.775848",
-      "lon": "9.182929"
-    }, {
-      "name": "Paderborn, Germany",
-      "lat": "51.718914",
-      "lon": "8.757521"
-    }]
+        "name": "Münster, Germany",
+        "lat": "51.960660",
+        "lon": "7.626135"
+      },
+      {
+        "name": "Aachen, Germany",
+        "lat": "50.775344",
+        "lon": "6.083883"
+      },
+      {
+        "name": "Munich, Germany",
+        "lat": "48.135119",
+        "lon": "11.581989"
+      },
+      {
+        "name": "Stuttgart, Germany",
+        "lat": "48.775848",
+        "lon": "9.182929"
+      },
+      {
+        "name": "Paderborn, Germany",
+        "lat": "51.718914",
+        "lon": "8.757521"
+      }
+    ]
   },
   "Guifi": {
     "url": "https://guifi.net/",
     "locations": [{
-      "name": "Barcelona, Spain",
-      "lat": "41.385056",
-      "lon": "2.173402"
-    }, {
-      "name": "Madrid, Spain",
-      "lat": "40.416704",
-      "lon": "-3.703754"
-    }, {
-      "name": "Bilbao, Biscay, Spain",
-      "lat": "43.262973",
-      "lon": "-2.934897"
-    }, {
-      "name": "Palafrugell, Girona, Spain",
-      "lat": "41.917881",
-      "lon": "3.162931"
-    }, {
-      "name": "Lleida, Spain",
-      "lat": "41.617560",
-      "lon": "0.620038"
-    }, {
-      "name": "Gijón, Spain",
-      "lat": "43.532194",
-      "lon": "-5.661109"
-    }, {
-      "name": "Málaga, Spain",
-      "lat": "36.721296",
-      "lon": "-4.421270"
-    }]
+        "name": "Barcelona, Spain",
+        "lat": "41.385056",
+        "lon": "2.173402"
+      },
+      {
+        "name": "Madrid, Spain",
+        "lat": "40.416704",
+        "lon": "-3.703754"
+      },
+      {
+        "name": "Bilbao, Biscay, Spain",
+        "lat": "43.262973",
+        "lon": "-2.934897"
+      },
+      {
+        "name": "Palafrugell, Girona, Spain",
+        "lat": "41.917881",
+        "lon": "3.162931"
+      },
+      {
+        "name": "Lleida, Spain",
+        "lat": "41.617560",
+        "lon": "0.620038"
+      },
+      {
+        "name": "Gijón, Spain",
+        "lat": "43.532194",
+        "lon": "-5.661109"
+      },
+      {
+        "name": "Málaga, Spain",
+        "lat": "36.721296",
+        "lon": "-4.421270"
+      }
+    ]
   },
   "MassMesh": {
     "url": "https://massmesh.org/",
     "locations": [{
-      "name": "Somerville, MA",
-      "zip": "02143"
-    }, {
-      "name": "Allston, MA",
-      "zip": "02134"
-    }]
+        "name": "Somerville, MA",
+        "zip": "02143"
+      },
+      {
+        "name": "Allston, MA",
+        "zip": "02134"
+      }
+    ]
   },
   "NYCMesh": {
     "url": "https://www.nycmesh.net/",
     "locations": [{
-      "name": "Manhattan, New York, NY",
-      "zip": "10013"
-    }, {
-      "name": "Manhattan, New York, NY",
-      "zip": "10024"
-    }, {
-      "name": "Brooklyn, New York, NY",
-      "zip": "11216"
-    }]
+        "name": "Manhattan, New York, NY",
+        "zip": "10013"
+      },
+      {
+        "name": "Manhattan, New York, NY",
+        "zip": "10024"
+      },
+      {
+        "name": "Brooklyn, New York, NY",
+        "zip": "11216"
+      }
+    ]
   },
   "People's Open Network": {
     "url": "https://peoplesopen.net/",
@@ -98,14 +115,14 @@
       "name": "Red Hook, Brooklyn, NY",
       "zip": "11231"
     }]
-  }
+  },
   "Laboratory B": {
     "url": "https://laboratoryb.org/",
     "locations": [{
       "name": "Laboratory B, Burlinton, VT",
       "zip": "05401"
     }]
-  }
+  },
   "Toronto Mesh": {
     "url": "https://tomesh.net/",
     "locations": [{
@@ -113,13 +130,12 @@
       "lat": "43.640995",
       "lon": "-79.4245652"
     }]
-  }
+  },
   "Newport Mesh": {
     "url": "https://newportmesh.org/",
     "locations": [{
-    "name": "Mephramagog Arts Collaborative / The 99 Gallery, Newport, VT",
-    "zip": "05855"
+      "name": "Mephramagog Arts Collaborative / The 99 Gallery, Newport, VT",
+      "zip": "05855"
     }]
   }
-
 }
