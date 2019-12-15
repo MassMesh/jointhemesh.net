@@ -99,4 +99,19 @@
       "zip": "11231"
     }]
   }
+  "Laboratory B": {
+    "url": "https://laboratoryb.org/",
+    "locations": [{
+      "name": "Laboratory B, Burlinton, VT",
+      "zip": "05401"
+    }]
+  }
+  "Toronto Mesh": {
+    "url": "https://tomesh.net/",
+    "locations": [{
+      "name": "Free Geek Toronto, Toronto, ON",
+      "lat": "43.640995",
+      "lon": "-79.4245652"
+    }]
+  }
 }
