@@ -114,4 +114,12 @@
       "lon": "-79.4245652"
     }]
   }
+  "Newport Mesh": {
+    "url": "https://newportmesh.org/",
+    "locations": [{
+    "name": "Mephramagog Arts Collaborative / The 99 Gallery, Newport, VT",
+    "zip": "05855"
+    }]
+  }
+
 }
