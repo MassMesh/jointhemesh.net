@@ -137,5 +137,12 @@
       "name": "Mephramagog Arts Collaborative / The 99 Gallery, Newport, VT",
       "zip": "05855"
     }]
+  },
+  "Broadband Hamnet": {
+    "url": "http://www.broadband-hamnet.org/",
+    "locations": [{
+      "name": "Broadband Hamnet",
+      "zip": "78703"
+    }]
   }
 }
