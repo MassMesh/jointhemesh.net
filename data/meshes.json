@@ -137,5 +137,14 @@
       "name": "Mephramagog Arts Collaborative / The 99 Gallery, Newport, VT",
       "zip": "05855"
     }]
+  },
+  "Project Waves": {
+    "url": "https://projectwaves.net/",
+    "locations": [{
+      "name": "Project Waves, Baltimore, MD",
+      "lat": "39.2774413",
+      "lon": "-76.613747",
+      "zip": "21230"
+    }]
   }
 }
